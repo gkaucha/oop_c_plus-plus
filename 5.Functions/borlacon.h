@@ -4,8 +4,8 @@
 #ifndef _INC_WCONSOLE  //don't let this file be included
 #define _INC_WCONSOLE  //twice in the same source file
 
-#include <windows.h>   //for Sleep()
-#include <conio.h>     //for kbhit(), getche()
+#include <unistd.h>   //for Sleep()
+#include <ncurses.h>     //for kbhit(), getche()
 #include <math.h>      //for sin, cos
 
 enum fstyle { SOLID_FILL, X_FILL, O_FILL,

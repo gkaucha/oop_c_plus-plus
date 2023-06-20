@@ -3,9 +3,9 @@
 // demonstrates passing a strucute to a function
 
 #include "borlacon.h"  // for graphics function
+#include <ncurses.h>  // for ncurses function
 
-////////////////////
-graphics circle
+//graphics circle
 struct circle
 {
    // coordinates of center
@@ -33,7 +33,7 @@ void circ_draw(circle c)
 int main()
 {
    //initailize graphics system
-   int_graphics();
+   init_graphics();
 
    //create circles
    circle c1 = { 15,7, 5, cBLUE, X_FILL };
